@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to Riyadh</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+        }
+
+        nav {
+            background-color: #4b0082;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #8a2be2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #6a0dad;
+        }
+
+        .page {
+            display: none;
+            padding: 30px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        #page1 {
+            background: linear-gradient(to bottom right, #d8b4f8, #a855f7);
+            color: black;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 100px;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .intro {
+            font-size: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .image-container img {
+    width: 60%;
+    border-radius: 15px;
+}
+
+        #page2, #page3, #page4 {
+            background: linear-gradient(to bottom right, #e0b3ff, #8a2be2);
+            color: white;
+        }
+
+        .region {
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background:#e0b3ff, #8a2be2;
+            color: black;
+        }
+
+        th, td {
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 24px;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <button onclick="showPage('page1')">واجهة الموقع</button>
+    <button onclick="showPage('page2')">الصفحة الرئيسية</button>
+    <button onclick="showPage('page3')">صور الأماكن</button>
+    <button onclick="showPage('page4')">نبذة عن موقعنا</button>
+</nav>
+
+<!-- الصفحة الأولى -->
+<section id="page1" class="page active">
+    <h1 class="title">Welcome to Riyadh</h1>
+    <p class="intro">
+        يُعد موقع "اكتشف الرياض" منصة إلكترونية مميزة تقدم دليلاً شاملاً للأماكن السياحية في الرياض. يهدف الموقع إلى تقديم معلومات دقيقة ومحدثة عن أبرز المعالم في العاصمة، ليكون مرشدًا للمسافرين والزوار من جميع أنحاء العالم.
+    </p>
+    <div class="image-container">
+      <img src="62DEDA33-8748-4A6A-833A-3E9D75238895.png">
+    </div>
+</section>
+
+<!-- الصفحة الثانية -->
+<section id="page2" class="page">
+    <h2>المعالم حسب المناطق</h2>
+
+    <!-- شمال الرياض -->
+    <div class="region">
+        <h3>شمال الرياض</h3>
+        <table>
+            <tr><th>النوع</th><th>الاسم</th><th>الرابط</th></tr>
+            <tr><td>مطعم</td><td>مطعم القرية النجدية</td><td><a href="https://maps.app.goo.gl/JtwNduxCKHpKjyk39?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>كافيه</td><td> كافيه جرعة فريدة</td><td><a href="https://maps.app.goo.gl/7mwnDyuS58DoDBCv9?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>حديقة</td><td>حديقة حي النرجس</td><td><a href="https://maps.app.goo.gl/ikevPhWwASkmP6ks9?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>سوق</td><td>النخيل مول</td><td><a href="https://maps.app.goo.gl/Gm9hwoydH5k5jZyT8?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>تراثي</td><td>متحف صقر الجزيرة</td><td><a href="https://maps.app.goo.gl/1CSDUENuVjY3RAo46?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+        </table>
+    </div>
+
+    <!-- جنوب الرياض -->
+    <div class="region">
+        <h3>جنوب الرياض</h3>
+        <table>
+            <tr><th>النوع</th><th>الاسم</th><th>الرابط</th></tr>
+<tr><td>مطعم</td><td>مطعم ريف وادك</td><td><a href="https://maps.app.goo.gl/a8KPEnJyAMYdToig9?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>كافيه</td><td>كوفي هيت</td><td><a href="https://maps.app.goo.gl/Bagu8AsHCCTjg12b9?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>حديقة</td><td>حديقة عكاظ</td><td><a href="https://maps.app.goo.gl/6jcAfgNXnqgbJYiL7?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>سوق</td><td>سلام مول</td><td><a href="https://maps.app.goo.gl/Qb38j9yVQBedggrZ6?g_st=com.google.maps.preview.copy"target="_blank">Google Maps</a></td></tr>
+            <tr><td>تراثي</td><td>المعيقلية</td><td><a href="https://maps.app.goo.gl/F723cCXUQL6vMabu7?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+        </table>
+    </div>
+
+    <!-- شرق الرياض -->
+    <div class="region">
+        <h3>شرق الرياض</h3>
+        <table>
+            <tr><th>النوع</th><th>الاسم</th><th>الرابط</th></tr>
+            <tr><td>مطعم</td><td>مطعم مزاميز</td><td><a href="https://maps.app.goo.gl/WeWq4pQDwpZun9et6?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>كافيه</td><td>كوفي غزالة</td><td><a href="https://maps.app.goo.gl/t6YZQuecforAkLj8A?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>حديقة</td><td>منتزه الملك عبد الله</td><td><a href="https://maps.app.goo.gl/Bddtt4jAJbi3ZJCx7?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>سوق</td><td>الحمراء مول</td><td><a href="https://maps.app.goo.gl/6hKQfE9DKK7X8ZnDA?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>تراثي</td><td>متحف الحمدان التراثي</td><td><a href="https://maps.app.goo.gl/o9VT25eevABFN4Pt9?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+        </table>
+    </div>
+
+    <!-- غرب الرياض -->
+    <div class="region">
+        <h3>غرب الرياض</h3>
+        <table>
+            <tr><th>النوع</th><th>الاسم</th><th>الرابط</th></tr>
+            <tr><td>مطعم</td><td>مطعم التراث النجدي</td><td><a href="https://maps.app.goo.gl/GXM26ELg8X6EJtx99?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>كافيه</td><td>ملت</td><td><a href="https://maps.app.goo.gl/3Joa4zLuiXsRQ4j57?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>حديقة</td><td>منتزه الدوح </td><td><a href="https://maps.app.goo.gl/8xcUgUyPUCgkx9hx7?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>سوق</td><td>القصر مول </td><td><a href="https://maps.app.goo.gl/rKdCqeuz9bvL4p6bA?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+            <tr><td>تراثي</td><td>قصر المصمك</td><td><a href="https://maps.app.goo.gl/wB8c9SfP5C6EuQkT9?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></td></tr>
+        </table>
+    </div>
+</section>
+
+<!-- الصفحة الثالثة -->
+<section id="page3" class="page">
+    <img src="PHOTO-2025-04-11-18-53-36 3.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="PHOTO-2025-04-11-18-53-33.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="PHOTO-2025-04-11-18-52-14 4.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3854.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3939.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3933.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3937.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3931.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3938.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3936.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3930.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3934.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3935.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3932.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3929.jpeg" style="width:300px; height:300px; border-radius:15%;">
+    <img src="IMG_3928.jpeg" style="width:300px; height:300px; border-radius:15%;">
+</section>
+
+<!-- الصفحة الرابعة -->
+<section id="page4" class="page">
+    <div class="about">
+        <h2>نبذة عن الموقع</h2>
+        <p>
+            يهدف موقع "اكتشف الرياض" إلى جمع أبرز الأماكن السياحية في مدينة الرياض وتقديمها بشكل مبسط وسهل الوصول للزوار والسياح. تم تصميم الموقع ليكون مرجعًا رقميًا دقيقًا وحديثًا.
+        </p>
+        <p>شكراً لزيارتكم!</p>
+    </div>
+</section>
+
+<script>
+    function showPage(pageId) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        document.getElementById(pageId).classList.add('active');
+    }
+</script>
+
+</body>
